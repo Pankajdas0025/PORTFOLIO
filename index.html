@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PROTFOLIO</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="Protfolio.css"> -->
+    <style type="text/css">
+           header{
+            width: 100%;
+            height:60px;
+            background-color: green;
+            display: block;
+         
+            align-content: center;
+             /*position: fixed;
+             overflow: hidden;*/
+            position: fixed;
+            z-index: 1;
+           top:0;
+        }#Desktop, a{
+            text-decoration: none;
+           color: white;
+           font-weight: bolder;
+           font-size: 15px;
+        margin: 10px;
+        margin-left: 24px;
+
+        }#Desktop a:hover{
+            width: 250px;
+            height: 200px;
+           font-weight: bolder;
+           font-size: 15px;
+        margin: 10px;
+        margin-left: 24px;
+        text-decoration:underline;
+    }#Mobile{
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    display: none;
+
+}.Mobile-button{
+    height:50px;
+    width: 50px;
+    border: none;
+}.Mobile-button .fa ,#menu{
+    font-size: 55px;
+    height:50px;
+    width: 50px;
+    border: none;
+    padding: 0;
+     text-decoration: none;
+     background-color: transparent;
+      box-shadow:none;
+    
+}
+       .dropdown {
+  position: relative;
+  display: block;
+  align-content: right;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 320px;
+  height: 640px;
+  box-shadow: 0px 8px 16px black;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:black;
+  padding: 10px ;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover 
+{background-color: gray;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+transition: 8s}
+        .Section{
+                top: 0;
+/*              border: 3px solid black;*/
+            width: 100%;
+                height:500px;
+            
+                
+            
+            }
+            .section-box{
+                height: 300px;
+                width:340px;
+                border: 1px solid black;
+                float: left;
+                margin-left: 8%;
+                border-radius:0;
+                margin-top: 28px;
+                box-shadow: 2px 2px 8px black;
+                color: black;
+                font-size: 30px;
+                position: relative;
+                padding: 5px;
+            }.section-box h2{
+                color:darkcyan;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                text-align:center ;
+            }.section-box:hover{
+/*              background-image: linear-gradient(white,blue,black,orange);*/
+background-blend-mode: darken;
+background-color: white;
+                color:black;
+                box-shadow: 2px 2px 8px green;
+                transform: scale(1.2);
+                transition: 2s;
+                overflow: hidden;
+                object-fit: cover;
+
+            }
+        #main{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            background-color:white;
+            
+        }#project{
+            width: 100%;
+
+        }#achivements{
+            width: 100%;
+            font-size: 35px;
+
+        }#Contact{
+             width: 100%;
+             font-size: 25px;
+             align-content: center;
+        }#Contact td{
+             
+             font-size: 25px;
+             align-content: center;
+
+        }#Contact input{
+            block-size: 25px;
+            background-color: black;
+            color: white;
+            width: 90%;
+            height: 100%;
+            font-size: 25px;
+        }
+        select{
+            block-size: 25px;
+            background-color: black;
+            color: white;
+            width: 90%;
+        }#button:hover{
+            background-color: green;
+            place-content: Done;
+
+        }.hbutton{
+            width: 200px;
+            height: 60px;
+            font-size: 32px;
+            font-family:sans-serif;
+             box-shadow: 10px 10px 50px gold;
+             margin-right: 7px;
+        }.hbutton:hover{
+            width: 200px;
+            height: 60px;
+            font-size: 32px;
+            font-family:sans-serif;
+             text-color:white;
+             background-color: darkgreen;
+             box-shadow: 10px 10px 50px black;
+             margin-right: 7px;
+             
+        }.hbutton a{
+            text-decoration: none;
+            color: black;
+        }.hbutton onclick{
+            text-decoration: none;
+            color: black;
+            font-size: 35px;
+        }#project img:hover{
+            transform: scale(1.3);
+             transition: 2s;
+              border: 2px solid;
+              text-decoration: none;
+        }.fa {
+              padding:10px;
+              font-size: 15px;
+              width: 16px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              border-radius: 50%;
+              border: 2px solid;
+              box-shadow: 2px 1px 5px black;
+              background-color: gray;
+             float: left;
+             word-spacing: 50px;
+        }.fa:hover {
+             
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              border-radius: 50%;
+              border: 2px solid;
+              box-shadow: 2px 1px 5px black;
+              background-color:black;
+        }#Detils{
+            width:100%;
+             border:2px solid;
+             background-color: green;
+        }
+
+
+
+
+
+
+       
+    
+
+
+    @media screen and (max-width:380px){
+
+        header{
+            width: 100%;
+            height: 80px;
+            background-color: transparent;
+            align-content: center;
+            position: relative;
+            z-index: 1;
+            float: left;
+          }#Desktop{ display: none;}
+           #Mobile{background-color: transparent;
+    height: 40px;
+    width: 100%; 
+    display:inline;}
+        #about{
+            
+            margin-left: 20%;
+            width: 100%;
+        }#about .container0{
+            
+    
+            margin: 5%;
+            margin-left:20%;
+/*          background-color: green;*/
+            width: 100%;
+            font-size: 18px;
+            height: auto;
+            display: block;
+            animation: AN 2s infinite;
+       
+        }.hbutton {
+            width: 200px;
+            height: 60px;
+            font-size: 32px;
+            font-family:sans-serif;
+             box-shadow: 10px 10px 50px gold;
+             margin-right: 7px;
+        }.hbutton:hover{
+            width: 200px;
+            height: 60px;
+            font-size: 32px;
+            font-family:sans-serif;
+             text-color:white;
+             background-color: darkgreen;
+             box-shadow: 10px 10px 50px black;
+             margin-right: 7px;
+             }
+        @keyframes AN{
+        from{transform: rotatey(0deg);}to{transform: rotatey(360deg);}
+
+        }
+        #about .container1{
+            display: inline-block;
+            margin-left: 4%;
+            width: 100%;
+            margin-bottom: 0;
+
+        } #about .container1 button{
+            margin-left: 12%;
+        }
+
+        #about .container2{
+            display: block;
+            width: 100%;
+         margin-left: 8%;
+/*         border: 3PX solid;*/
+         height: 100%;
+        } #about .container2 a{
+            word-spacing: 15px;
+            float: left;
+            margin: 12px;r
+
+        }
+        .section-box{
+        width:100%;
+        display: block;
+   margin-left: 25%;
+   margin-bottom: 2%;
+   position:relative;
+       
+align-content: center;
+             border:2px solid;
+            
+        }#project{
+/*            border: 3px solid;*/
+            align-items:center;
+            align:center;
+            margin-left: 15%;
+            display:none ;
+        }
+        #project #header{
+     
+            align-content: center;
+            font-size: 8px;
+            margin-right: 14%;
+            text-align: left;
+            text-decoration: underline overline;
+        }
+        .project1,.project2,.project3,.project4 img{
+            width: 500px;
+            height:350px;
+
+            position: relative;
+            margin-right: 20%;
+
+        }
+        .project1,.project2,.project3,.project4 ,img{
+           
+/*            border: 3px solid black;*/
+            position:relative;
+            width: 100%;
+/*            margin-right:20%;*/
+/*            margin-left:3%;*/
+            margin-bottom:0;    
+            display: block;
+
+        }#project img:hover{
+            transition: 2s;
+            transform: scale(1);
+
+        }#achivements{
+            margin-left: 16%;
+            height: auto;
+            width: 100%;
+            display: none;
+          }
+        #header{
+            height: 80px;
+            width: 100%;
+            margin-right: 72px;
+            text-decoration: underline overline;
+          }#achivements1,#achivements2,#achivements3{
+            display: none;
+          }
+          #achivements3,#achivements4 img{
+            width: 100%;
+            position: relative;
+            margin-left: 20px;
+            size: 25px;
+            gap: 35px;
+    }#Contact{
+        display:inline-block;
+        height: 200px;
+        width:500px; 
+        padding: 0;
+        margin:0;
+    }
+
+
+    }
+  
+  
+
+
+
+
+
+
+
+    </style>
+    
+</head>
+<body>
+    <!-- start header from here  -->
+
+    <header id="home"><nav id="Desktop">
+        <a href="#home">Home</a> |
+          <a href="#about">About</a> |
+            <a href="#project">Projects</a> |
+              <a href="#achivements">Achivements</a> |
+                <a href="#Contact">Contact</a>|
+                  <a href="#Reference">Reference</a>
+              </nav>
+
+
+
+
+              <nav id="Mobile">
+                <div class="dropdown">
+                <button class="Mobile-button"><i class="fa fa-bars" id="menu"></i></button>
+                <div class="dropdown-content">
+                     <a href="#home">Home</a>
+          <a href="#about">About</a>
+            <a href="#project">Projects</a>
+              <a href="#achivements">Achivements</a>
+                <a href="#Contact">Contact</a>
+                  <a href="#Reference">Reference</a>
+                </div></div>
+                  
+              </nav>
+              </header>   <br><bR><BR><BR>    
+    <!-- End header -->
+    <!-- start Home section -->
+    <!-- <div id="main"><br><br><br><br><br><br> -->
+
+
+       <!-- START ABOUT SECTION  -->
+        <table id="about">
+            <tr>
+                <td colspan="2" align="right" height="50" class="container0"> <center><h1>WEB Developer</h1></center>
+                </td>
+            </tr>
+            <tr>
+             <td align="center" width="40%"class="container1">
+            <img id="p" src="C:\Users\Dell\OneDrive\Desktop\Photo\P.jpg"width="300" height="300" style="border-radius: 200px;box-shadow: 2PX 2PX 100PX; margin-bottom: 25px; border-style:  double ;border: 4px solid;"><br><br><button class="hbutton" onclick="alert('Do You want to Download My Resume')"><a href="https://www.pdffiller.com/jsfiller-desk21/?flat_pdf_quality=low&mode=ref&lang=en&ref=https%3A%2F%2Fwww.pdffiller.com%2Fen%2Fforms%2Fmy_documents%3FselectItemId%3D1630016248&projectId=1630016248&PAGE_REARRANGE_V2_MVP=true&richTextFormatting=true&isPageRearrangeV2MVP=true&jsf-page-rearrange-v2=true&jsf-redesign-full=true&act-notary-pro-integration=false&jsf-fake-edit-embedded=true&isSkipEditorLoadFrequency=true&jsf-desktop-ux-for-tablets=false&jsf-probability-70=true&jsf-socket-io=false&routeId=472fd9ff72f752ea22e5dab9736a47c0#813d885212494debaf5dd51ca038472a" ,download>Hire Me</a></button>
+                </td>
+                <td width="60%" class="container2">
+                               <font face="Verdana" size="4.5"> Thanks for your interest, here 
+                                is a quick story of me and this 
+                                website.
+                                I am Pankaj Kumar Das,
+                                loves to solve programming problems 
+                                in most efficient ways. Apart from 
+                                Tools and knowledge, 
+                                I do my work mainly in<mark> C-Language,</mark>
+                                <mark>HTML</mark> and <mark>CSS</mark> & <mark>Javascript.</mark> Machine Learning and Data Structure
+                                and Algorithm are my weak  section.
+                                Besides these I know Web Development.
+                               
+                                This website is basically one of my 
+                                Web Development project which is 
+                                built using HTML as well as CSS only.
+                                Here you can also seee my other project ideas for 
+                                for web designing.
+
+                                Thanks again for reading this, 
+                                because of people like you, it 
+                                exists and prospers!<br>
+                                <a href="https://m.facebook.com/profile.php?id=100066526389871" class="fa fa-facebook"></a>
+                                <a href="https://x.com/Pankajdas_0025?t=eTYKqBZWJnlxuyyklp3nLQ&s=09" class="fa fa-twitter"></a>
+                                <a href="http://www.linkedin.com/in/pankaj-das-134603297" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com/pankajdas_0025/" class="fa fa-instagram"></a>
+                                 <a href="https://github.com/Pankajdas0025" class="fa fa-github"></a>
+                                <hr color="black">
+                    
+                </td>
+            </tr>
+            
+        </table>
+        <!-- END OF ABOUT SECTION  -->
+
+
+        <div class="Section">
+            <div class="section-box"><h2>Soft skills</h2>
+              <ul type="disc">
+                    <li>Communication</li>
+                <li>Leadership</li>
+            <li>Project Management</li>
+            <li>Team Work</li>
+            </ul> </div>
+            <div class="section-box"><h2>Services</h2>
+                <ul type="disc">
+                    <li>Make Assignment</li>
+                <li>Project Ideas</li>
+            <li>Relative Notes</li>
+            <li>Course Tutorials</li>
+            <li>Source Code</li></ul></div>
+            <div class="section-box"><h2>Technical Skills</h2>
+            <ul type="disc">
+                    <li>HTML</li>
+                <li>CSS</li>
+            <li>Javascript</li>
+            <li>DSA</li>
+            <li>Machine-learning</li></ul></div>
+        </div>
+
+
+
+
+        <table id="project">
+             <tr>
+                <td colspan="2" align="right" id="header">
+                   <font  size="8"color="#4CAF50" style=" margin-right: 65PX;text-shadow: 1px 2px 3px black;">MY Projects</font><br>
+                   <br><br>
+                </td>
+            </tr>
+            <tr>
+                <td width="50%" class="project1" align="center"><a href="TMU ERP.html"  target="blank" style=""><img src="C:\Users\Dell\OneDrive\Desktop\Photo\project1.png"width="70%" height="70%" style="box-shadow: 2PX 2PX 20PX ;"></a></td>
+                <td width="50%" class="project2" align="center"><a href="BOYS BAZAR.html" target="blank"><img src="C:\Users\Dell\OneDrive\Desktop\Photo\project2.png"width="70%" height="70%"style="box-shadow: 2PX 2PX 20PX ;"></a></td>
+            </tr>
+            <tr>
+                <td width="50%" class="project3" align="center"><a href="Perks.html"  target="blank"><img src="C:\Users\Dell\OneDrive\Desktop\Photo\project3.png"width="70%" height="70%"style="box-shadow: 2PX 2PX 20PX ;"></a></td>
+                <td width="50%" class="project4" align="center"><a href="C:\Users\Dell\OneDrive\Desktop\W.Tech LAB\ASSIGN 2\24.html"  target="blank"><img src="C:\Users\Dell\OneDrive\Desktop\Photo\project4.png"width="70%" height="70%"style="box-shadow: 4PX 4PX 20PX ;"></a></td>
+            </tr>
+        </table>
+        <table id="achivements">
+            <tr>
+                <td colspan="2" align="right">
+                   <font id="header" face="Verdana" size="8"color="#4CAF50" style=" margin-right: 65PX;text-shadow: 1px 2px 3px black;">Achivements</font><br><br>
+                </td>
+            </tr>
+            <tr><td width="50%" align="center" id="achivements1">
+                            <h4>Certificate Of Training</h4></td>
+                 
+                <td width="50%" align="center" id="achivements2">
+                            <h4>Intern at The Website Maker</h4></td>
+               
+            </tr>
+            <tr>
+               
+                <td width="50%" align="center"id="achivements3"><img  src="C:\Users\Dell\OneDrive\Desktop\Photo\Cert2.png" width="70%"style="box-shadow: 4PX 4PX 20PX ;"></td>
+                <td width="50%" align="center" id="achivements4"><img  src="C:\Users\Dell\OneDrive\Desktop\Photo\Cert1.png" width="70%"style="box-shadow: 4PX 4PX 20PX ;"></td>
+            </tr>
+        </table>
+        <table id="Contact">
+<!--              <tr>
+                <td colspan="10" align="right" id="Contact0">
+                   <font face="Verdana" size="8"color="#4CAF50" style="text-decoration:none; margin-right: 65PX;text-shadow: 1px 2px 3px black;">Contact Me</font><br><br>
+                </td>
+            </tr> -->
+        <!-- <tr ><form action="Emailto:Pd5569121@gmail.com"><td width="50" align="right" style="color:black;">Name:</td>
+                <td><input type="text" name="Name" placeholder="Enter you name"></td>
+                <td width="50" align="right"style="color:black;">Phone:</td>
+                <td><input type="Tel" name="Phone" placeholder="Enter You mobile"></td>
+                <td width="50" align="right"style="color:black;">Email:</td>
+                <td><input type="text" name="Name" placeholder="Enter Your Email"></td>
+                <td width="50" align="right"style="color:black;">Country:-</td>
+                <td><select><option value="0">Select Your Country</option>
+                <option value="1">India</option>
+            <option value="2">USA</option>
+        <option value="3">Pakistan</option>
+    <option value="4">America</option>
+</select></td><td>Quary:<textarea></textarea></td>
+               
+                <td id="Contact2"><input type="submit" id="button" name="submit" value="ok" style="width:60px;height:60px;box-shadow: 10px 2px 50px black;"></td>
+            </tr>--> 
+            <tr> 
+                    <td   bgcolor="darkgray" align="center">
+                            <font 
+                                color="white" size="6"><a href="#home" style="text-decoration: none; color:white;">Home ||</a><a href="#about" style="text-decoration:none; color:white;">About  ||</a><a href="">Contact us:</a><br><br>
+                                ©Copyright 2050 by nobody. 
+                                All rights reserved.<br>BY:Pankaj DAs
+                            </font>
+                        </td></tr>
+            
+        </table>
+
+    </div>
+
+</body>
+</html>
