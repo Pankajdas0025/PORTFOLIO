@@ -1,0 +1,430 @@
+
+           header{
+            width: 100%;
+            height:60px;
+            background-color: #34495e;
+            display: block;
+         
+            align-content: center;
+             /*position: fixed;
+             overflow: hidden;*/
+            position: fixed;
+            z-index: 1;
+           top:0;
+        }#Desktop, a{
+            text-decoration: none;
+           color: white;
+           font-size: 28px;
+        margin: 10px;
+        margin-left: 24px;
+
+        }#Desktop a:hover{
+            width: 250px;
+            height: 200px;
+color: black;
+           font-size: 28px;
+        margin: 10px;
+        margin-left: 24px;
+        background-color: white;
+
+    }#Mobile{
+    background-color: transparent;
+    height: 40px;
+    width: 100%;
+    display: none;
+
+}.Mobile-button{
+    height:50px;
+    width: 50px;
+    border: none;
+    background-color: white;
+}.Mobile-button .fa ,#menu{
+    font-size: 55px;
+    height:50px;
+    width: 50px;
+    border: none;
+    padding: 0;
+     text-decoration: none;
+     background-color: transparent;
+      box-shadow:none;
+    
+}
+       .dropdown {
+  position: relative;
+  display: block;
+  align-content: right;
+  height:300px;
+  width: 300px;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 300px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:black;
+  padding: 10px ;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover 
+{background-color: gray;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  
+    display: none;
+transition: 8s}
+        .Section{
+                top: 0;
+                margin-top:100px;
+background-color:  #34495e;
+            width: 100%;
+                height:500px;
+            
+                
+            
+            }
+            .section-box{
+                height: 300px;
+                width:340px;
+                border: 1px solid black;
+                float: left;
+                margin-left: 8%;
+                border-radius:0;
+                margin-top: 28px;
+                box-shadow: 2px 2px 8px black;
+                color: black;
+                font-size: 30px;
+                position: relative;
+                padding: 5px;
+            }.section-box h2{
+                color:darkcyan;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                text-align:center ;
+            }.section-box:hover{
+/*              background-image: linear-gradient(white,blue,black,orange);*/
+background-blend-mode: darken;
+background-color: white;
+                color:black;
+                box-shadow: 2px 2px 8px hotpink;
+                transform: scale(1.02);
+                transition: s1;
+                overflow: hidden;
+                object-fit: cover;
+
+            }
+        #main{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            background-color:white;
+            
+        }#Project{
+            width: 100%;
+            height: auto;
+/*            background-color: black;*/
+
+        }.flip-box {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  background-color: gray;
+}
+
+.flip-box-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  background-color: transparent;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: transparent;
+  color:black;
+}
+
+.flip-box-back {
+  background-color: transparent;
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow:2px 1px 8px red;
+}
+
+
+        #achivements{
+            width: 100%;
+            font-size: 35px;
+            margin-top: 200px;
+            background-color:  #34495e;
+
+        }#Contact{
+             width: 100%;
+             font-size: 25px;
+             align-content: center;
+             background-color: gray;
+        }#Contact td{
+             
+             font-size: 25px;
+             align-content: center;
+
+        }#Contact input[type=text],input[type=email],input[type=tel],textarea{
+            background-color: white;
+            color:black;
+            width: 30%;
+            height: 50px;
+            font-size: 25px;
+        }#Contact input[type=text],input[type=email],input[type=tel],textarea::placeholder{
+          
+            text-align: center;
+
+        }
+        select{
+            block-size: 25px;
+            background-color: black;
+            color: white;
+            width: 90%;
+        }/*#button:hover{
+            background-color: green;
+            place-content: Done;
+
+        }*/#hbutton{
+            width: 200px;
+            height: 60px;
+            font-size: 25px;
+            color: white;
+            font-family:sans-serif;
+            background-color: blue;
+             margin-right: 7px;
+        }#hbutton:hover{
+            width: 200px;
+            height: 60px;
+            font-size: 25px;
+            font-family:sans-serif;
+             text-color:white;
+             background-color: darkgreen;
+             box-shadow: 10px 10px 50px black;
+             margin-right: 7px;
+             animation: none;
+             
+        }#hbutton a{
+            text-decoration: none;
+            color: black;
+        }.fa {
+              padding:10px;
+              font-size: 15px;
+              width: 16px;
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              border-radius: 50%;
+              border: 2px solid;
+              box-shadow: 2px 1px 5px black;
+              background-color: gray;
+             float: left;
+             word-spacing: 50px;
+        }.fa:hover {
+             
+              text-align: center;
+              text-decoration: none;
+              margin: 5px 2px;
+              border-radius: 50%;
+              border: 2px solid;
+              box-shadow: 2px 1px 5px black;
+              background-color:black;
+        }#git:hover{
+            background-color: black;
+        } #li:hover{
+            background-color: blue;
+        } #fa:hover{
+            background-color: darkblue;
+        } #In:hover{
+            background-color:#c32aa3;
+        } #tw:hover{
+            background-color:black;
+        }#form-btn{
+            background-color: blue;
+            height: 60px;
+            width: 100px;
+            color: white;
+            font-size: 22px;
+        }#form-btn:hover{
+            background-color: green;
+            height: 60px;
+            width: 100px;
+            color: white;
+            font-size: 22px;
+        }
+
+
+/*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*/
+/*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*//*    
+/*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*//*       Mobile responsive*/
+    
+
+
+    @media screen and (max-width:425px){
+        body{
+        
+        }
+
+        header{
+            width: 100%;
+            height: 80px;
+            background-color: transparent;
+            align-content: center;
+            position: relative;
+            z-index: 1;
+            float: left;
+          }#Desktop{ display: none;}
+           #Mobile{background-color: white;
+
+    height: 40px;
+    width: 100%; 
+    display:inline;}
+        #about{
+            
+            margin-left: 20%;
+            width: 100%;
+        }#about .container0{
+            
+    
+            margin: 5%;
+            margin-left:15%;
+            width: 100%;
+            font-size: 18px;
+            height: auto;
+            display: block;
+            animation: AN 2s infinite;
+       
+        }#hbutton {
+            width: 200px;
+            height: 60px;
+            font-size: 25px;
+            font-family:sans-serif;
+             box-shadow: 10px 10px 50px gold;
+             margin-right: 107px;
+             margin-bottom: 25px;
+        }#hbutton:hover{
+            width: 200px;
+            height: 60px;
+            font-size: 25px;
+            font-family:sans-serif;
+             text-color:white;
+             background-color: darkgreen;
+             box-shadow: 10px 10px 50px black;
+             margin-right: 7px;\
+             animation: none;
+             }
+        @keyframes AN{
+        from{transform: rotatey(0deg);}to{transform: rotatey(360deg);}
+
+        }
+        #about .container1{
+            display: inline-block;
+            margin-left: 4%;
+            width: 100%;
+            margin-bottom: 0;
+
+        } #about .container1 button{
+            margin-left: 12%;
+        }
+
+        #about .container2{
+            display:inline-block; block;
+            width: 100%;
+            position: relative;
+         margin-left: 1%;
+     
+         height: 550px;
+        }.container2{ 
+        }#about .container2 a{
+            word-spacing: 15px;
+            float: left;
+            margin: 12px;r
+
+        } .Section{
+          
+background-color:  transparent;
+          
+            
+            }
+        .section-box{
+        width:100%;
+        display: inline-block;
+   margin-left: 25%;
+   margin-bottom: 2%;
+position: relative;
+       
+align-content: center;
+    
+            
+        }#Project{
+            display:block ;
+            margin-left: 25%;
+            background-color: none;
+
+        }
+        #Project #header{
+     
+            align-content: center;
+            font-size: 8px;
+            margin-right: 14%;
+            text-align: left;
+            text-decoration: underline overline;
+        }
+        .Project1,.Project2,.Project3,.Project4{
+            display:block;
+
+        }#header3{
+     
+            align-content: center;
+            font-size: 33px;
+            margin-left: 25%;
+           
+            text-decoration: underline overline;
+        }
+        #Contact{
+        display:block;
+        height: 300px;
+        background-color: white;
+        width: 300px;
+        margin-left: 20%;
+      }#Contact input[type=text],input[type=email],input[type=tel],textarea{
+            block-size: 25px;
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: auto;
+            font-size: 25px;
+        }
+
+
+    }
+
+    
