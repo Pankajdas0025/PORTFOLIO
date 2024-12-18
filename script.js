@@ -1,11 +1,4 @@
-function  Time(){
-   var Time=new Date();
-   var a=Time.toLocaleTimeString();
-   document.getElementById("Timebtn").innerHTML=a;
 
-}
-setInterval(Time,100)
-// for home button only //
 
 function Scrollbtn(){
 
