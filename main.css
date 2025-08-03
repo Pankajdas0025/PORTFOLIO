@@ -462,7 +462,7 @@ transform: scale(1.01);
     width: 80%;
     height: 300px;
     margin: 33px 10%;
-    background-image: url(images/email.png);
+    background-image: url(Images/email.png);
     background-size: cover;
     background-position: center;
 
@@ -1018,7 +1018,7 @@ height: auto;
     width: 80%;
     height: 300px;
     margin: 33px 10%;
-    background-image: url(../Images/webdevelopment-client-contact.png);
+    background-image: url(Images/webdevelopment-client-contact.png);
     background-size: cover;
     background-position: center;
 
