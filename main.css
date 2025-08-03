@@ -1,0 +1,1028 @@
+:root
+{
+  --primary-color: #6366f1; /* Indigo */
+  --secondary-color: #f43f5e; /* Rose */
+  --bg-light: #f9fafb;
+  --Lighttext-color: #000000;
+  --darktext-color:white;
+  --card-bg: #f3eded;
+  --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  --radius:0px;
+  --font-main: 'Poppins', sans-serif;
+  --hoverbg :#555;
+  --pSize:0.9rem;
+  --border:2px dotted white;
+
+
+}
+
+.first-webdev-section
+{
+background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+height:auto;
+width:100%;
+position: relative;
+overflow: hidden;
+
+}
+.first-webdev-section video {
+  width: 100%;
+  border-radius: 0 0 10% 10%;
+  height: auto;
+  object-fit: cover;
+
+
+}
+.overlay-content {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+
+
+}.maintext{
+
+    margin-left: 50%;
+    height: 100%;
+    width: 50%;
+    margin:0.01%;
+    padding: 10%;
+   background: linear-gradient(to right, var(--secondary-color), transparent );
+backdrop-filter: blur(15px);
+}
+.maintext h1{
+    font-size:55px;
+    font-weight: bold;
+    color: white;
+}.maintext h1 div
+{
+    background-color:var(--secondary-color);
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    position: absolute;
+    z-index: -1001;
+    margin-left: -50px;
+}
+.maintext p
+{
+    color: white;
+    font-size:1.2rem;
+
+}.maintext button
+{
+  padding: 12px 12px;
+  background-color:transparent;
+  /* background-color:var(--primary-color); */
+  color: var(--card-bg);
+  font-size: 1rem;
+  border-radius: var(--radius);
+  border:var(--border);
+}.maintext button:hover
+{
+   background-color: var(--hoverbg);
+}
+/* skill section ----------------------------------------------*/
+.techlang
+{
+    height:600px;
+    width: 100%;
+    padding:3rem 2rem;
+
+
+}.techlang h2{
+    text-align: left;
+    color: rgb(54, 47, 47);
+}.techlangbox
+{
+
+    height: 35%;
+    width: 20%;
+    margin: 2.5%;
+    background-color: white;
+    box-shadow: 2px 1px 2px var(--primary-color);
+    float: left;
+    border-radius: var(--radius);
+    border: var(--border);
+    /* padding: 10px; */
+}.techlangbox:hover
+{
+
+    transform: translateY(10px);
+    transition: 1s;
+}
+.techlangbox span {
+    background-color:var(--primary-color);
+    width:300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 14px 0px 0px 0px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    clip-path: polygon(0% 0% , 90% 0% ,100% 50% , 90% 100% , 0% 100%);
+
+}.techlangbox img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin:30px 5px;
+}
+/* education section  ----------------------------------------------*/
+.education
+{
+    height: 700px;
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+}.education h2{
+    padding: 2rem 3rem;
+}
+
+.edubox
+{
+    height: 180px;
+    width: 80%;
+    margin:10px 10%;
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 1px 5px var(--primary-color);
+    transition: 1s;
+}.edubox:hover
+{
+    transform: scale(1.02);
+}
+
+
+.eduimg
+{
+width: 20%;
+height: 100%;
+background-color: #000;
+}.eduimg img
+{
+    height: 100%;
+    width: 100%;
+}.edutype
+{
+width: 80%;
+height: 100%;
+padding: 20px 40px;
+font-size: 25px;
+color: black;
+background-color: var(--secondary-color);
+}.edutype p{
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}.edutype #year{
+    color: rgb(76, 38, 38);
+}
+
+
+
+/* showing our projects & clients ---------------------------------*/
+.ourstatus
+{
+    height: 500px;
+    width: 100%;
+    background:transparent;
+    padding: 0;
+}.ourstatus .ourstatushero
+{
+margin: 0;
+height:600px;
+width:100%;
+border-radius: var(--radius);
+}.ourstatus h2{
+color: rgb(40, 35, 35);
+border-radius: var(--radius);
+width: 20%;
+font-size: 25px;
+padding:5% 3rem;
+height: 50%;
+}.client-slider
+{
+    height: 40%;
+    width: 30%;
+    position: absolute;
+    margin:-200px 30%;
+    touch-action: pan-y;
+    overflow: hidden;
+
+
+}
+ .clients-images {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+      height: 100%;
+       width: 100%;
+
+       /* overflow: hidden; */
+
+
+    } .clients-images img {
+      flex-shrink: 0;
+      height:100%;
+      width:100%;
+      /* object-fit: cover; */
+    }.numbers
+    {
+        position: absolute;
+        margin: 10% 40%;
+        height: 100px;
+        width: 300px;
+
+
+    }  .num-btn {
+      display: inline-block;
+      margin: 0 5px;
+      padding: 6px 10px;
+      background: #ddd;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .num-btn.active {
+      background-color: #333;
+      color: white;
+    }
+
+/*
+    Experience section --------------------------------------------------------------*/
+    .experience
+    {
+        height:auto;
+        width: 100%;
+        background-color:transparent;
+    } .experience h2{
+        padding: 2rem 3rem;
+    }.internexpe
+    {
+        height: 220px;
+        width: 80%;
+        background-color: #000000;
+        margin: 10px 10%;
+        display: flex;
+        box-shadow: 2px 2px 10px var(--primary-color);
+    }.internintro
+    {
+        width: 70%;
+        background-color: #6366f1;
+        padding: 5px 35px;
+    } .internintro h3
+    {
+        font-size: 25px;
+        color: white;
+    } .internintro p
+    {
+        font-size: 12px;
+        color: rgb(222, 210, 210);
+    }
+
+    .interncompany
+    {
+        background-color: #f43f5e;
+        width: 30%;
+    }.interncompany img{
+        height: 100%;
+        width: 100%;
+    }
+
+/* services  -----------------------------------------------------------------*/
+.pricingplan
+{
+
+    height: 600px;
+    width: 100%;
+    display: block;
+    margin-top:8%;
+}.pricingplan h2{
+    padding: 1rem 3rem;
+}
+
+.plancategory
+{
+    background-color: #ffffff;
+     box-shadow: 2px 1px 2px var(--primary-color);
+    height: 500px;
+    width: 30%;
+    display:flex;
+    flex-wrap: wrap;
+    float: left;
+    margin: 25px 1.65%;
+    overflow: hidden;
+    justify-content: space-between;
+}.planheader
+{
+    top: 0;
+    width:100%;
+    height: 10%;
+     background: linear-gradient(to right, var(--secondary-color),var(--primary-color));
+     text-align: center;
+     align-items: center;
+     align-content: center;
+     color: white;
+     font-size: 22px;
+     display: inline-block;
+     position: relative;
+
+
+}.plancontent
+{
+   height:90%;
+    width:100%;
+     background-color: white;
+     padding: 0rem 3rem;
+
+
+}.plancontent li{
+    padding: 5px;
+    list-style: none;
+    transform-style: preserve-3d;
+    transition: 0.1s;
+    transition-delay: 0.1s;
+
+}
+.plancontent li::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(60deg, var(--primary-color),transparent);
+  transform: rotateY(90deg);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.plancontent li:hover::before {
+  transform: rotateY(0deg);
+}
+
+
+
+.plancontent span
+{
+    background-color: #f2ecec;
+    color: #6366f1;
+}
+.doughtplanprice
+{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    padding: 3rem 2rem;
+    font-size: 20px;
+    text-align: center;
+}.doughtplanprice button
+{
+    font-size: 20px;
+    padding: 15px;
+    background-color: #6366f1;
+    color: white;
+    border: var(--border);
+    outline: none;
+    /* transition: 1s; */
+}.doughtplanprice button:hover
+{
+background-color: var(--hoverbg);
+transform: scale(1.01);
+/*section from where clients can select their plan and put their idea and information  */
+}.planorder
+
+{
+ height: 600px;
+ width: 100%;
+ background:transparent;
+ display: flex;
+
+}.planorder h2{
+    padding:1rem 3rem;
+}
+
+
+.planordercontact-form
+{
+    width: 40%;
+    height: 500px;
+    margin: 50px 5%;
+    background-color:transparent;
+    backdrop-filter: blur(12px);
+    /* float: left; */
+    padding:10px 20px;
+
+}.planordercontact-form input, select
+{
+    height: 50px;
+    width:90%;
+    margin:1% 5% ;
+    font-size: 15px;
+    padding:2px 15px;
+
+}.planordercontact-form input:focus ,
+.planordercontact-form select:focus
+{
+    outline: none;
+    border: 2px solid var(--primary-color);
+}.planordercontact-form  span{
+    /* background-color:#f4abb7; */
+    opacity:0.9;
+    margin:80px 28px;
+    color: rgb(232, 0, 0);
+    padding: 2px 15px;
+
+    position:absolute;
+}
+
+#client_form_sbtn , #img_form_sbtn
+{
+    background-color: #6366f1;
+    color: white;
+    font-size: 20px;
+    border: var(--border);
+}
+#img_form_sbtn
+{
+    background-color: rgb(158, 240, 158);
+    display:none;
+    color: rgb(34, 27, 27);
+}
+
+#client_form_sbtn:hover
+{
+    background-color: var(--hoverbg);
+    transform: scale(1.01);
+
+}
+.contact_img
+{
+    width: 80%;
+    height: 300px;
+    margin: 33px 10%;
+    background-image: url(images/email.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+/* mobile responsive ----------------------------------------------*/
+@media screen and (max-width:700px) {
+
+
+.first-webdev-section
+{
+height:500px;
+width: 100%;
+border: var(--border);
+position: relative;
+overflow: hidden;
+
+}
+.first-webdev-section video {
+  width: 100%;
+  height: 500px;
+}
+.overlay-content {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+display: flex;
+
+}.maintext{
+
+    margin-left: 50%;
+    height: 100%;
+    width: 100%;
+    margin:0.01%;
+    padding: 10%
+
+}
+.maintext h1{
+    font-size:2.1rem;
+    font-weight: bold;
+}.maintext h1 div
+{
+    height:100px;
+    width:100px;
+    position: absolute;
+    z-index: -1001;
+    margin-left: -35px;
+}
+.maintext p
+{
+    color: white;
+    font-size:0.9rem;
+
+}.maintext button
+{
+  padding: 5px 5px;
+  background-color:transparent;
+  /* background-color:var(--primary-color); */
+  color: var(--card-bg);
+  font-size: 0.6rem;
+  border-radius: var(--radius);
+  border:var(--border);
+}
+/* tech lang */
+.techlang
+{
+    height:1500px;
+    width: 100%;
+    padding:3rem 0rem;
+}
+.techlangbox
+{
+
+    height:11%;
+    width:100%;
+    margin:2% 0;
+    background-color: white;
+   display:inline-block;
+    border-radius: var(--radius);
+    border: var(--border);
+    /* padding: 10px; */
+}.techlangbox span {
+
+    clip-path:none;
+
+}
+
+.techlangbox img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin:30px 5px;
+}
+/* education section  ----------------------------------------------*/
+.education
+{
+    height: 1220px;
+    width: 100%;
+    padding: 15px 0;
+}.education h2{
+    padding: 2rem 3rem;
+}
+
+.edubox
+{
+    height: 350px;
+    width: 100%;
+    margin:10px 0%;
+    display: block;
+    box-shadow: 2px 1px 5px black;
+    transition: 1s;
+}.edubox:hover
+{
+    transform: scale(1.02);
+}
+
+
+.eduimg
+{
+width: 100%;
+height: 40%;
+background-color: #000;
+}.eduimg img
+{
+    height: 100%;
+    width: 100%;
+}.edutype
+{
+width: 100%;
+height: 60%;
+padding: 20px 10px;
+font-size: 15px;
+color: black;
+}.edutype p{
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}.edutype #year{
+    color: rgb(76, 38, 38);
+}
+
+.ourstatus
+{
+    height: 300px;
+    width: 100%;
+    background:transparent;
+    padding: 0;
+}
+.client-slider
+{
+    height:45%;
+    width: 80%;
+    position: absolute;
+    margin: -100px 7%;
+    overflow: hidden;
+
+
+}
+ .clients-images {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+      height: 100%;
+       width: 100%;
+    } .clients-images img {
+      flex-shrink: 0;
+      height:100%;
+      width:100%;
+      /* object-fit: cover; */
+    }.numbers
+    {
+        position: absolute;
+        margin: 25% 20%;
+        float: left;
+        width: 70%;
+    }
+
+    /* Experience section --------------------------------------------------------------*/ */
+   #experience
+    {
+
+        width: 100%;
+        height: 5000px;
+        background-color:red;
+        margin: 0;
+
+
+    }.internexpe
+    {
+        height:600px;
+        width: 100%;
+        background-color: #171414;
+        margin:50px 0;
+        display:inline-block;
+        box-shadow: 2px 2px 10px var(--primary-color);
+
+    }.internintro
+    {
+        width: 100%;
+        height: 450px;
+        background-color: #6366f1;
+        padding: 15px 35px;
+    } .internintro h3
+    {
+        font-size: 25px;
+        color: white;
+    } .internintro p
+    {
+        font-size: 12px;
+        color: rgb(222, 210, 210);
+    }
+
+    .interncompany
+    {
+        background-color: #f43f5e;
+        width: 100%;
+        height: 200px;
+    }.interncompany img{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .pricingplan
+{
+    height:1650px;
+    padding: 0;
+
+
+}.plancategory
+{
+    height: 550px;
+    width: 100%;
+    display:block;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content:none;
+    margin:0;
+}.planheader
+{
+
+     font-size:18px;
+
+
+
+}.plancontent
+{
+     padding: 2rem 2rem;
+
+
+}.plancontent li{
+    padding: 2px ;
+    list-style: none;
+}.doughtplanprice
+
+{
+ width: 100%;
+    height: 300px;
+    padding:1rem 2rem;
+
+}
+.doughtplanprice button
+{
+    font-size: 15px;
+    padding: 15px;
+    background-color: #6366f1;
+    color: white;
+    border: var(--border);
+    outline: none;
+
+}.planorder
+
+{
+ height: 854px;
+ width: 100%;
+ display:block;
+
+
+}.planordercontact-form
+{
+    width: 99%;
+    height: 500px;
+    margin: 15px 0.5%;
+    padding:10px 20px;
+
+}#planordercontact-form-img
+{
+    background-color: transparent;
+    height: 300px;
+    padding: 0;
+}.planordercontact-form input ,select
+{
+    height: 50px;
+    width:90%;
+    margin:1% 5% ;
+    font-size: 15px;
+    padding:2px 15px;
+
+}#client_form_sbtn ,
+#img_form_sbtn
+{
+font-size:12px;
+margin: 10px 0;
+padding:0;
+width: 100%;
+}
+
+.planordercontact-form  span{
+    background-color:#f4abb7;
+    opacity:1;
+    margin:80px 15px;
+    color: rgb(41, 38, 38);
+    font-size: 13px;
+    width: 70%;
+    position: absolute;
+    padding: 2px 15px;
+    /* position:absolute; */
+}
+}
+
+
+
+
+@media screen and (min-width:701px) and (max-width:1100px)
+{
+
+.maintext{
+
+    margin-left: 50%;
+    height: 100%;
+    width: 100%;
+    margin:0.01%;
+    padding: 10%;
+   background: linear-gradient(to right, var(--secondary-color), transparent ,transparent);
+backdrop-filter: blur(15px);
+}
+.maintext h1{
+    font-size:3rem;
+    font-weight: bold;
+    color: white;
+}.maintext h1 div
+{
+    background-color:var(--secondary-color);
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    position: absolute;
+    z-index: -1001;
+    margin-left: -35px;
+}
+.maintext p
+{
+    color: white;
+    font-size:1.2rem;
+
+}.techlangbox
+{
+    /* background: linear-gradient(to bottom,transparent, var(--secondary-color)); */
+    height: 40%;
+    width: 22%;
+    margin: 1.5%;
+    background-color: white;
+    float: left;
+    border-radius: var(--radius);
+    border: var(--border);
+    /* padding: 10px; */
+}.techlangbox span {
+width:120px;
+    clip-path:none;
+
+}
+
+
+.techlangbox img{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    margin:15px 5px;
+}
+.edubox
+{
+    height: 180px;
+    width: 90%;
+    margin:10px 5%;
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 1px 5px var(--primary-color);
+    transition: 1s;
+}
+.client-slider
+{
+    height: 35%;
+    width: 60%;
+    position: absolute;
+    margin: -100px 20%;
+      touch-action: pan-y;
+     box-shadow:none;
+      overflow: hidden;
+
+} .clients-images img {
+      flex-shrink: 0;
+      height:100%;
+      width:100%;
+      /* object-fit: cover; */
+    }.numbers
+    {
+        position: absolute;
+        margin: 25% 40%;
+        float: left;
+        width: 60%;
+
+
+    }
+/*
+    Experience section --------------------------------------------------------------*/
+    .experience
+    {
+        height:auto;
+        width: 100%;
+        background-color:transparent;
+    } .experience h2{
+        padding: 2rem 3rem;
+    }.internexpe
+    {
+        height: 200px;
+        width: 100%;
+        background-color: #000000;
+        margin: 10px 0%;
+        display: flex;
+        box-shadow: 2px 2px 10px var(--primary-color);
+    }.internintro
+    {
+        width: 70%;
+        background-color: #6366f1;
+        padding: 5px 35px;
+    } .internintro h3
+    {
+        font-size: 18px;
+        color: white;
+    } .internintro p
+    {
+        font-size: 12px;
+        color: rgb(222, 210, 210);
+    }.internintro li
+    {
+        font-size: 12px;
+    }
+
+    .interncompany
+    {
+        background-color: #f43f5e;
+        width: 30%;
+    }.interncompany img{
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    .planheader
+{
+
+     font-size: 15px;
+}.plancontent
+{
+   height:90%;
+    width:100%;
+     background-color: white;
+     padding: 0rem 1rem;
+
+
+}.plancontent li{
+    padding: 2px;
+    font-size: 14px;
+    list-style: none;
+}
+.plancontent span{
+    font-size: 12px;
+    padding: 0;
+}
+.doughtplanprice
+{
+
+height: auto;
+}
+
+.planorder
+
+{
+ height: 600px;
+ width: 100%;
+ display: flex;
+
+}.planorder h2
+{
+
+    position: absolute;
+    margin-bottom: 55px;
+}
+
+.planordercontact-form
+{
+    width: 40%;
+    height: 500px;
+    margin: 50px 5%;
+    padding:10px 20px;
+
+}.planordercontact-form input, select
+{
+    height: 50px;
+    width:90%;
+    margin:1% 5% ;
+    font-size: 15px;
+    padding:2px 15px;
+
+}.planordercontact-form input:focus ,
+.planordercontact-form select:focus
+{
+    outline: none;
+    border: 2px solid var(--primary-color);
+}.planordercontact-form  span{
+    /* background-color:#f4abb7; */
+    opacity:0.9;
+    margin:80px 28px;
+    color: rgb(232, 0, 0);
+    padding: 2px 15px;
+
+    position:absolute;
+}
+
+#client_form_sbtn , #img_form_sbtn
+{
+    background-color: #6366f1;
+    color: white;
+    font-size: 20px;
+    border: var(--border);
+}
+#img_form_sbtn
+{
+    background-color: rgb(158, 240, 158);
+    display:none;
+    color: rgb(34, 27, 27);
+}
+
+#client_form_sbtn:hover
+{
+    background-color: var(--hoverbg);
+    transform: scale(1.01);
+
+}
+.contact_img
+{
+    width: 80%;
+    height: 300px;
+    margin: 33px 10%;
+    background-image: url(../Images/webdevelopment-client-contact.png);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+}
