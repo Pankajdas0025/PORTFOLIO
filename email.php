@@ -87,7 +87,7 @@ $sms  = htmlspecialchars(trim($_POST['client_sms']));
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
         $mail->Username   = 'pd5569121@gmail.com';
-        $mail->Password   = 'carp uidg qexa uvyr'; // App Password
+        $mail->Password   = ''; // App Password
         $mail->SMTPSecure = 'tls';
         $mail->Port       = 587;
 
