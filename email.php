@@ -64,7 +64,7 @@ $sms  = htmlspecialchars(trim($_POST['client_sms']));
         </div>
         <div style='background-color: #ecf0f1; padding: 15px; border-radius: 5px; margin-top: 20px;'>
             I truly appreciate your interest. I'll review your message and respond at the earliest possible convenience.
-            <p>If your inquiry is time-sensitive, you may also contact me directly <br><a href='tel:+91915572662'>+91 9155726625</a></p>
+            <p>If your inquiry is time-sensitive, you may also contact me directly <br><a href='tel:+91915572****'>+91 91557266**</a></p>
             <p>In the meantime, you're welcome to explore more of my work:</p>
             <a href='https://www.linkedin.com/in/pankaj-das-134603297/' title='Linkedin account'>Linkedin</a>
             <a href='https://github.com/Pankajdas0025' title='Github account'>Github</a>
