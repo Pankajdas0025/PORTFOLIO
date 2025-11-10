@@ -1,0 +1,6 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Clean URLs for root pages
+RewriteRule ^$ index.php [L]
+RewriteRule ^home$ index.php [L]
