@@ -68,9 +68,31 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $mail->isHTML(true);
         $mail->Subject = "New Portfolio Contact Form Submission: $subject";
-        $mail->Body = "<h3><strong>Name:</strong> $name</h3>
+        $mail->Body = "<body style='margin: 0; padding:5px; background-color: #f4f4f4; font-family: Arial, sans-serif; line-height: 1.2; color: #333;'>
+    <div style='max-width: 1000px; margin: auto; padding:10px; border-radius:0; box-shadow: 0 2px 10px rgba(0,0,0,0.1);'>
+        <img src='images/preview-banner.png' height='auto' width='100%' style='margin-top: 25px; font-size:2rem;'>
+        <div style='color: #ffffff; padding:10px; background: linear-gradient(to right, #6366f1,#f43f5e); text-align: center;'><h2>Hello 👋 $name</h2>
+                       <p><strong>Name:</strong> $name</p>
                        <p><strong>Email:</strong> $email</p>
-                       <p><strong>Message:</strong><br>$userMessage</p>";
+                       <p><strong>Message:</strong><br>$userMessage</p>
+        </div>
+        <div style='background-color: #ecf0f1; padding: 15px; border-radius: 5px; margin-top: 20px;'>
+            I truly appreciate your interest. I'll review your message and respond at the earliest possible convenience.
+            <p>If your inquiry is time-sensitive, you may also contact me directly <br><a href='tel:+91915572****'>+91 91557266**</a></p>
+            <p>In the meantime, you're welcome to explore more of my work:</p>
+            <a href='https://www.linkedin.com/in/pankaj-das-134603297/' title='Linkedin account'>Linkedin</a>
+            <a href='https://github.com/Pankajdas0025' title='Github account'>Github</a>
+        </div>
+        <div style='margin-top: 30px; font-size: 0.9em; color: #555; border-top: 1px solid #ddd; padding: 20px;'>
+            <h2>Looking forward to connecting with you.</h2>
+            <p>Pankaj Kumar Das</p>
+            <p>Full Stack Web Developer</p>
+            <p><a href='https://www.bing.com/maps?q=kishanganj&FORM=HDRSC6&cp=26.082286%7E87.938469&lvl=11.4'>🏠 Kishanganj, Bihar (855115)</a></p>
+            <a href='mailto:pd5569121@gmail.com'>📧 pd5569121@gmail.com</a>
+        </div>
+    </div>
+    </body>";
+
 
         $mail->send();
         echo "<script>alert('✅ Message sent successfully!');</script>";
