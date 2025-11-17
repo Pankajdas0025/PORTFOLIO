@@ -218,7 +218,7 @@ Alongside development, I have a strong understanding of SEO and how it ties into
 Whether I'm improving an existing product or building something from scratch, I aim to create websites that feel seamless, perform efficiently, and connect with users in the best way possible.</p>
          <div class="cta" data-aos="fade-up">
           <a class="btn" href="#projects"><i class="fa-solid fa-eye"></i> View Work</a>
-         <a class="btn secondary" href="images/pankajResume.pdf" download>
+         <a class="btn secondary" href="images/Full-Stack CV Resume.pdf" download>
   <i class="fa-solid fa-download"></i> Resume
 </a>
 
